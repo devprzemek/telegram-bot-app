@@ -16,6 +16,7 @@ public class MessageCalculator {
     public void getMessage() {
         telegramBot.sendMessage(createMessage());
     }
+
     private String createMessage() {
         return "Local time is " + LocalTime.now() + " : " + UUID.randomUUID();
     }
